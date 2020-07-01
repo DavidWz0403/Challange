@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>Frage-Antwort-App</title>
+    
+</head>
+<body>
+    <div class="hauptcontainer">
+
+
+            <div id=”div-container1”>
+                <div class = "question">
+                <input type="text" class="input-name" placeholder="Name" id= "input-name">
+                <button id="btn-1">Next</button>
+
+                </div>
+            </div>
+
+            <div id=”div-container1”>
+
+                <div class = "question-1">
+
+                Bevorzugte Währung ? <br>
+                <input type="radio" name="antwort1" value="USD" id='USD'> USD
+                <input type="radio" name="antwort2" value="BTC" id='BTC'> BTC
+                <button id = "btn-2">Next</button>
+
+                </div>
+
+            </div>
+
+            <div id=”div-container1”>
+
+                <div class = "question-2">
+
+                Welche Programmiersprache beherrschen Sie?<br>
+                <input type="radio" name="antwort3" value="python" id='python'> Python
+                <input type="radio" name="antwort4" value="C+" id= 'C+'> C+
+                <button id= "btn-3"> Next</button>
+
+            </div>
+
+            <div id=”div-container1”>
+
+                <div class = "question-3">
+
+                Bevorzugtes JS-Framework?
+                <input type="radio" name="antwort5" value="react" id='react'> React
+                <input type="radio" name="antwort6" value="angular" id= 'angular'> Angular
+                <button type ="submit"id= "btn-4"> Finish</button>
+
+            </div>
+
+            </div>
+      
+
+    
+    </div>
+    
+ 
+    <script src="{% static 'js/app.js' %}"></script>
+    
+</body>
+
+
+
+
+
+</html>
